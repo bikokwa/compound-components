@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Option from "./components/Option";
+import Select from "./components/Select";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Select value="C++">
+        <Option value="JS" text="JavaScript" />
+        <Option value="Cpp" text="C++" />
+        <Option value="HTML" text="HTML" />
+        <Option value="CSS" text="CSS" />
+        <Option value="JAVA" text="JAVA" />
+      </Select>
+
+      <Select value="HP">
+        <Option value="Mac" text="MacBook" />
+        <Option value="HP" text="HP" />
+        <Option value="Lenovo" text="Lenovo" />
+      </Select>
     </div>
   );
 }
